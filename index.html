@@ -8,7 +8,13 @@
 <link rel="stylesheet" href="styles/reset.css">
 <link rel="stylesheet" href="styles/debug.css">
 <style>
+article {
+  display: grid;
+  grid-template-columns: lfr minmax(0, 8.5in) lfr;
+  height: 100vh; /* temp fix */
+}
 
+article * {grid-column: 2 / 3; }
 
 
 <<style media="screen">
@@ -17,6 +23,10 @@
 </head>
 <body>
 
+<article>
+
+<p class="styles-css">article</p>
+</article>
 
   </body>
 </html>
